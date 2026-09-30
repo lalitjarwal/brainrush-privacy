@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - BrainRush</title>
+  <meta name="description" content="Privacy Policy for BrainRush: Fast, offline-first casual cognitive training and mini-games. Learn how we handle and protect your data.">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="BrainRush - Privacy Policy">
+  <meta property="og:description" content="Official Privacy Policy for BrainRush mobile application on Android.">
+  <meta property="og:type" content="website">
+
+  <!-- Modern Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #4F46E5;
+      --primary-light: #EEF2FF;
+      --primary-hover: #4338CA;
+      --accent: #F59E0B;
+      --success: #10B981;
+      --text-main: #1F2937;
+      --text-muted: #4B5563;
+      --text-light: #6B7280;
+      --bg-body: #F9FAFB;
+      --bg-card: #FFFFFF;
+      --border-color: #E5E7EB;
+      --border-subtle: #F3F4F6;
+      --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+      --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.08), 0 2px 4px -1px rgba(0, 0, 0, 0.04);
+      --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -2px rgba(0, 0, 0, 0.04);
+      --radius-sm: 8px;
+      --radius-md: 12px;
+      --radius-lg: 16px;
+      --radius-full: 9999px;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --text-main: #F3F4F6;
+        --text-muted: #9CA3AF;
+        --text-light: #6B7280;
+        --bg-body: #0F172A;
+        --bg-card: #1E293B;
+        --border-color: #334155;
+        --border-subtle: #1E293B;
+        --primary-light: #1E1B4B;
+        --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+        --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4);
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.68;
+      color: var(--text-main);
+      background-color: var(--bg-body);
+      -webkit-font-smoothing: antialiased;
+      padding: 0;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1E1B4B 0%, #312E81 50%, #4338CA 100%);
+      color: #FFFFFF;
+      padding: 4rem 1.5rem 3.5rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    header::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, #F59E0B, #EC4899, #6366F1);
+    }
+
+    .header-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(255, 255, 255, 0.12);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      color: #FCD34D;
+      padding: 0.35rem 0.9rem;
+      border-radius: var(--radius-full);
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 1.25rem;
+    }
+
+    .app-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 2.75rem;
+      font-weight: 800;
+      letter-spacing: -0.025em;
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+
+    .app-title span.highlight {
+      color: #FCD34D;
+    }
+
+    .header-subtitle {
+      font-size: 1.15rem;
+      color: #E0E7FF;
+      max-width: 600px;
+      margin: 0 auto 1.5rem;
+      font-weight: 400;
+    }
+
+    .metadata-bar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      font-size: 0.875rem;
+      color: #C7D2FE;
+    }
+
+    .metadata-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: -2rem auto 4rem;
+      padding: 0 1.5rem;
+      position: relative;
+    }
+
+    .summary-card {
+      background: var(--bg-card);
+      border-radius: var(--radius-lg);
+      padding: 1.75rem 2rem;
+      border: 1px solid var(--border-color);
+      box-shadow: var(--shadow-lg);
+      margin-bottom: 2rem;
+    }
+
+    .summary-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--primary);
+    }
+
+    .summary-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+    }
+
+    .summary-box {
+      background: var(--bg-body);
+      padding: 1rem;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-color);
+    }
+
+    .summary-box h4 {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-light);
+      margin-bottom: 0.35rem;
+    }
+
+    .summary-box p {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--text-main);
+    }
+
+    .toc-card {
+      background: var(--bg-card);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem 2rem;
+      border: 1px solid var(--border-color);
+      box-shadow: var(--shadow-sm);
+      margin-bottom: 2.5rem;
+    }
+
+    .toc-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+      color: var(--text-main);
+    }
+
+    .toc-list {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 0.5rem 1.5rem;
+    }
+
+    .toc-list a {
+      color: var(--primary);
+      text-decoration: none;
+      font-size: 0.925rem;
+      font-weight: 500;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: color 0.15s ease, transform 0.15s ease;
+    }
+
+    .toc-list a:hover {
+      text-decoration: underline;
+      transform: translateX(3px);
+    }
+
+    .policy-content {
+      background: var(--bg-card);
+      border-radius: var(--radius-lg);
+      padding: 2.5rem 2.25rem;
+      border: 1px solid var(--border-color);
+      box-shadow: var(--shadow-md);
+    }
+
+    .policy-content section {
+      margin-bottom: 3rem;
+      scroll-margin-top: 2rem;
+    }
+
+    .policy-content section:last-child {
+      margin-bottom: 0;
+    }
+
+    h2 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.45rem;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid var(--border-subtle);
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    h3 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--text-main);
+      margin: 1.5rem 0 0.6rem;
+    }
+
+    p {
+      margin-bottom: 1rem;
+      color: var(--text-muted);
+    }
+
+    ul, ol {
+      margin: 0 0 1.25rem 1.5rem;
+      color: var(--text-muted);
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    li strong {
+      color: var(--text-main);
+    }
+
+    .badge-check {
+      color: var(--success);
+      font-weight: 700;
+    }
+
+    .card-callout {
+      border-left: 4px solid var(--primary);
+      background-color: var(--primary-light);
+      padding: 1.15rem 1.35rem;
+      border-radius: 0 var(--radius-md) var(--radius-md) 0;
+      margin: 1.25rem 0;
+    }
+
+    .card-callout p {
+      margin-bottom: 0;
+      color: var(--text-main);
+      font-size: 0.95rem;
+    }
+
+    .card-callout.warning {
+      border-left-color: var(--accent);
+      background-color: rgba(245, 158, 11, 0.1);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.5rem 0;
+      font-size: 0.925rem;
+    }
+
+    th, td {
+      padding: 0.85rem 1rem;
+      text-align: left;
+      border: 1px solid var(--border-color);
+    }
+
+    th {
+      background-color: var(--bg-body);
+      font-weight: 600;
+      color: var(--text-main);
+    }
+
+    td {
+      color: var(--text-muted);
+    }
+
+    tr:nth-child(even) td {
+      background-color: rgba(0, 0, 0, 0.015);
+    }
+
+    .code-pill {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 0.85em;
+      background-color: var(--bg-body);
+      border: 1px solid var(--border-color);
+      padding: 0.15rem 0.4rem;
+      border-radius: var(--radius-sm);
+      color: var(--primary);
+    }
+
+    .actions-bar {
+      display: flex;
+      justify-content: flex-end;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .btn-action {
+      background: transparent;
+      border: 1px solid var(--border-color);
+      padding: 0.45rem 0.9rem;
+      border-radius: var(--radius-md);
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      transition: all 0.2s ease;
+      background: var(--bg-card);
+    }
+
+    .btn-action:hover {
+      color: var(--primary);
+      border-color: var(--primary);
+    }
+
+    footer {
+      text-align: center;
+      padding: 3rem 1.5rem;
+      color: var(--text-light);
+      font-size: 0.875rem;
+      border-top: 1px solid var(--border-color);
+      background-color: var(--bg-card);
+    }
+
+    footer a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 640px) {
+      header {
+        padding: 3rem 1rem 2.5rem;
+      }
+      .app-title {
+        font-size: 2rem;
+      }
+      .policy-content {
+        padding: 1.5rem 1.25rem;
+      }
+      .container {
+        padding: 0 1rem;
+      }
+      .summary-card {
+        padding: 1.25rem;
+      }
+      .toc-card {
+        padding: 1.25rem;
+      }
+    }
+
+    @media print {
+      body {
+        background: #fff;
+        color: #000;
+      }
+      header {
+        background: none;
+        color: #000;
+        padding: 1rem 0;
+      }
+      header::after, .actions-bar, .toc-card {
+        display: none;
+      }
+      .policy-content, .summary-card {
+        box-shadow: none;
+        border: 1px solid #ccc;
+        padding: 1rem 0;
+      }
+      .container {
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    }
+  </style>
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Legislation",
+    "name": "BrainRush Privacy Policy",
+    "description": "Privacy policy and data collection disclosures for BrainRush casual cognitive puzzle mobile application.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Tribus Interactive",
+      "email": "support@brainrush.app"
+    },
+    "datePublished": "2026-03-30",
+    "dateModified": "2026-03-30"
+  }
+  </script>
+</head>
+<body>
+
+  <header>
+    <div class="header-badge">
+      ⚡ Google Play Compliance & Data Transparency
+    </div>
+    <h1 class="app-title">
+      BrainRush <span class="highlight">Privacy Policy</span>
+    </h1>
+    <p class="header-subtitle">
+      Fast, offline-first casual cognitive training designed with player privacy at its core.
+    </p>
+    <div class="metadata-bar">
+      <div class="metadata-item">
+        <strong>Application:</strong> BrainRush
+      </div>
+      <div class="metadata-item">
+        <strong>Package ID:</strong> <span class="code-pill" style="color: #fff; background: rgba(255,255,255,0.15); border:none;">com.tribus.brainrush</span>
+      </div>
+      <div class="metadata-item">
+        <strong>Effective Date:</strong> March 30, 2026
+      </div>
+      <div class="metadata-item">
+        <strong>Version:</strong> 1.0.0
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+
+    <div class="actions-bar">
+      <button class="btn-action" onclick="window.print()">
+        <svg width="15" height="15" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4H7v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path>
+        </svg>
+        Print / Save PDF
+      </button>
+    </div>
+
+    <!-- Quick At-a-Glance Executive Summary -->
+    <div class="summary-card">
+      <div class="summary-title">
+        <svg width="22" height="22" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+        </svg>
+        Privacy At A Glance
+      </div>
+      <div class="summary-grid">
+        <div class="summary-box">
+          <h4>No Account Required</h4>
+          <p>Play instantly without registration, email, or login credentials.</p>
+        </div>
+        <div class="summary-box">
+          <h4>100% Local Storage</h4>
+          <p>Scores, streaks, levels, and settings remain on your physical device.</p>
+        </div>
+        <div class="summary-box">
+          <h4>No Sensitive Permissions</h4>
+          <p>Zero access to camera, microphone, photos, location, or contacts.</p>
+        </div>
+        <div class="summary-box">
+          <h4>Clear User Control</h4>
+          <p>Delete all saved gameplay data anytime by clearing app storage.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation / Table of Contents -->
+    <nav class="toc-card" aria-label="Table of Contents">
+      <div class="toc-title">Table of Contents</div>
+      <ul class="toc-list">
+        <li><a href="#overview">1. Overview & Architecture</a></li>
+        <li><a href="#data-we-do-not-collect">2. Data We Do NOT Collect</a></li>
+        <li><a href="#data-stored-locally">3. Data Stored Locally On Your Device</a></li>
+        <li><a href="#third-party-services">4. Third-Party Services & Network Usage</a></li>
+        <li><a href="#permissions">5. Android Permissions Justification</a></li>
+        <li><a href="#ad-personalization">6. Advertising & User Choices (AdMob)</a></li>
+        <li><a href="#retention-deletion">7. Data Retention & Deletion Policy</a></li>
+        <li><a href="#children">8. Children's Privacy (COPPA & Families)</a></li>
+        <li><a href="#regional-rights">9. Regional Privacy Rights (GDPR & CCPA)</a></li>
+        <li><a href="#security">10. Security Measures</a></li>
+        <li><a href="#contact">11. Contact Information</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="policy-content">
+
+      <!-- Section 1 -->
+      <section id="overview">
+        <h2>1. Overview & Architecture</h2>
+        <p>
+          Welcome to <strong>BrainRush</strong> (&ldquo;we&rdquo;, &ldquo;our&rdquo;, or &ldquo;the app&rdquo;), developed and published by <strong>Tribus Interactive</strong>. BrainRush provides offline-first cognitive mini-games designed to train quick mental math, memory recall, spatial orientation, reaction speed, and focus.
+        </p>
+        <p>
+          We believe in strict <em>privacy-by-design</em>. Unlike traditional online games that compel players to create cloud accounts, submit social logins, or transmit gameplay logs to proprietary servers, BrainRush operates on an offline-first architecture. We do not operate user registration servers, nor do we build player behavioral profiles.
+        </p>
+        <div class="card-callout">
+          <p>
+            <strong>Core Principle:</strong> Your high scores, training streaks, custom profile names, and game preferences belong to you and are stored exclusively on your device.
+          </p>
+        </div>
+      </section>
+
+      <!-- Section 2 -->
+      <section id="data-we-do-not-collect">
+        <h2>2. Data We Do NOT Collect</h2>
+        <p>
+          To maintain absolute clarity for our users and satisfy Google Play Data Safety requirements, the following categories of data are <strong>never</strong> collected, accessed, or stored by BrainRush:
+        </p>
+        <table>
+          <thead>
+            <tr>
+              <th>Data Category</th>
+              <th>Collection Status</th>
+              <th>Explanation</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Personal Identification</strong></td>
+              <td><span class="badge-check">❌ Never Collected</span></td>
+              <td>We do not collect names, email addresses, phone numbers, home addresses, or passwords.</td>
+            </tr>
+            <tr>
+              <td><strong>Contacts & Communications</strong></td>
+              <td><span class="badge-check">❌ Never Accessed</span></td>
+              <td>No access to your address book, call history, or SMS messages.</td>
+            </tr>
+            <tr>
+              <td><strong>Location Data</strong></td>
+              <td><span class="badge-check">❌ Never Accessed</span></td>
+              <td>No access to GPS, precise location, or coarse location coordinates.</td>
+            </tr>
+            <tr>
+              <td><strong>Photos, Media & Files</strong></td>
+              <td><span class="badge-check">❌ Never Accessed</span></td>
+              <td>No storage scanning, photo library access, or file system monitoring.</td>
+            </tr>
+            <tr>
+              <td><strong>Audio & Camera</strong></td>
+              <td><span class="badge-check">❌ Never Accessed</span></td>
+              <td>No microphone or camera hardware access.</td>
+            </tr>
+            <tr>
+              <td><strong>Biometrics & Health</strong></td>
+              <td><span class="badge-check">❌ Never Collected</span></td>
+              <td>No physiological, fitness, or biometric data is recorded.</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Section 3 -->
+      <section id="data-stored-locally">
+        <h2>3. Data Stored Locally On Your Device</h2>
+        <p>
+          BrainRush saves gameplay progression and app configuration directly to your device&rsquo;s internal sandboxed storage via the Android <span class="code-pill">SharedPreferences</span> mechanism. This information never leaves your phone unless you manually take a screenshot or share via the system share sheet:
+        </p>
+        <ul>
+          <li><strong>Player Profile:</strong> Nickname, selected avatar emoji/icon, total XP earned, and unlocked player rank.</li>
+          <li><strong>Cognitive Stats:</strong> Calculated Brain Score, best scores per game mode, accuracy rates, and total games completed.</li>
+          <li><strong>Daily Challenge & Streaks:</strong> Current daily streak counter, dates of completed daily playlists, and streak milestones.</li>
+          <li><strong>Achievements:</strong> Progress counters and unlocked badges.</li>
+          <li><strong>App Preferences:</strong> Sound effect volume/mute, haptic feedback toggle, dark mode/high contrast theme, and dynamic launcher icon selection.</li>
+        </ul>
+        <p>
+          This data is stored purely within the application&rsquo;s private sandbox. Other apps on your device cannot read or modify this data.
+        </p>
+      </section>
+
+      <!-- Section 4 -->
+      <section id="third-party-services">
+        <h2>4. Third-Party Services & Network Usage</h2>
+        <p>
+          While the core game runs entirely offline, BrainRush integrates trusted third-party SDKs to deliver advertisements, verify software updates, and ensure crash stability when an active internet connection is available. These service providers handle data according to their respective privacy policies:
+        </p>
+
+        <h3>A. Google AdMob (Advertising)</h3>
+        <p>
+          We utilize Google AdMob to display non-intrusive interstitial ads between sessions and optional rewarded ads (e.g., bonus XP). Google may collect and process device technical identifiers (such as the Google Advertising ID &mdash; GAID), IP address, and ad interaction metrics to deliver relevant advertisements and combat ad fraud.
+        </p>
+        <p>
+          Review Google&rsquo;s Advertising Policies: 
+          <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">https://policies.google.com/technologies/ads</a>
+        </p>
+
+        <h3>B. Google Firebase (Diagnostic Telemetry)</h3>
+        <p>
+          BrainRush is configured with Google Firebase Core. If diagnostic telemetry is enabled, Firebase receives anonymous crash diagnostics and aggregate system events (e.g., app launch, device model, operating system version) to identify app freezes and crashes across diverse Android device configurations.
+        </p>
+        <p>
+          Review Firebase Privacy Information: 
+          <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">https://firebase.google.com/support/privacy</a>
+        </p>
+
+        <h3>C. Shorebird (Over-The-Air Patch Delivery)</h3>
+        <p>
+          To rapidly deploy bug fixes and security hotfixes without requiring a full manual store update, BrainRush includes Shorebird CodePush. Shorebird periodically checks whether an approved security or gameplay hotfix is available for your app build. This communication transmits standard device architecture details (e.g., CPU architecture and current patch number) to verify update compatibility.
+        </p>
+        <p>
+          Review Shorebird Privacy Terms: 
+          <a href="https://shorebird.dev/privacy" target="_blank" rel="noopener noreferrer">https://shorebird.dev/privacy</a>
+        </p>
+      </section>
+
+      <!-- Section 5 -->
+      <section id="permissions">
+        <h2>5. Android Permissions Justification</h2>
+        <p>
+          BrainRush requests only the minimal technical permission required to operate connected features:
+        </p>
+        <ul>
+          <li>
+            <span class="code-pill">android.permission.INTERNET</span>: Allows the application to communicate over the network for Google AdMob ad delivery, Firebase crash diagnostic reporting, and Shorebird OTA patch validation.
+          </li>
+        </ul>
+        <div class="card-callout">
+          <p>
+            <strong>Note:</strong> BrainRush functions smoothly offline. If your device is offline or in Airplane Mode, all games, high scores, daily challenges, and settings remain 100% accessible without any crashes or degraded functionality.
+          </p>
+        </div>
+      </section>
+
+      <!-- Section 6 -->
+      <section id="ad-personalization">
+        <h2>6. Advertising & User Choices (AdMob)</h2>
+        <p>
+          You retain full control over advertising identifiers and ad personalization directly through your Android device settings:
+        </p>
+        <ul>
+          <li>
+            <strong>Reset or Delete Advertising ID:</strong> Navigate on your device to <em>Settings &gt; Google &gt; Ads</em> (or <em>Privacy &gt; Ads</em>). Here you can choose to <em>&ldquo;Reset advertising ID&rdquo;</em> or <em>&ldquo;Delete advertising ID&rdquo;</em> entirely.
+          </li>
+          <li>
+            <strong>Personalized Ads Opt-Out:</strong> You can turn off personalized advertising. When opted out, you may still see the same quantity of ads, but they will be contextual rather than personalized based on your browsing interests.
+          </li>
+        </ul>
+      </section>
+
+      <!-- Section 7 -->
+      <section id="retention-deletion">
+        <h2>7. Data Retention & Deletion Policy</h2>
+        <p>
+          In accordance with Google Play developer policies and global data protection standards:
+        </p>
+        <h3>How to Delete Your Data</h3>
+        <p>
+          Because BrainRush stores your gameplay profile and settings strictly on your local device, you can completely and permanently delete all your data at any time without submitting a support ticket:
+        </p>
+        <ol>
+          <li>Open your device&rsquo;s <strong>Settings</strong> app.</li>
+          <li>Go to <strong>Apps</strong> or <strong>Application Manager</strong> &gt; <strong>BrainRush</strong>.</li>
+          <li>Tap <strong>Storage &amp; Cache</strong>.</li>
+          <li>Tap <strong>Clear Storage</strong> (or <strong>Clear Data</strong>).</li>
+        </ol>
+        <p>
+          Uninstalling the BrainRush app will also permanently delete all local game files and preferences from your device.
+        </p>
+      </section>
+
+      <!-- Section 8 -->
+      <section id="children">
+        <h2>8. Children's Privacy (COPPA & Families Policy)</h2>
+        <p>
+          BrainRush is designed as an all-ages casual cognitive training application suitable for general audiences. The app does not target, solicit, or knowingly collect any personal information from children under the age of 13 (or under 16 in the European Union).
+        </p>
+        <p>
+          If a parent or guardian becomes aware that their child has provided personal information or interacted with third-party networks through our app without consent, please contact us immediately at <a href="mailto:support@brainrush.app">support@brainrush.app</a>, and we will take immediate steps to remove any associated information.
+        </p>
+      </section>
+
+      <!-- Section 9 -->
+      <section id="regional-rights">
+        <h2>9. Regional Privacy Rights (GDPR & CCPA)</h2>
+
+        <h3>A. European Economic Area (EEA) & UK (GDPR)</h3>
+        <p>
+          Under the General Data Protection Regulation (GDPR), users residing in the EEA and UK have the right to:
+        </p>
+        <ul>
+          <li>Request confirmation of whether personal data is being processed.</li>
+          <li>Request deletion of personal data processed by third-party SDKs.</li>
+          <li>Object to or restrict certain processing activities.</li>
+          <li>Lodge a complaint with your local Data Protection Authority (DPA).</li>
+        </ul>
+
+        <h3>B. California Residents (CCPA / CPRA)</h3>
+        <p>
+          Under the California Consumer Privacy Act (CCPA) and California Privacy Rights Act (CPRA):
+        </p>
+        <ul>
+          <li><strong>We Do Not Sell Personal Information:</strong> BrainRush does not sell, rent, or lease personal information to third parties in exchange for monetary consideration.</li>
+          <li><strong>Right to Know & Delete:</strong> You have the right to request disclosure of categories of data collected and request deletion of personal information.</li>
+        </ul>
+      </section>
+
+      <!-- Section 10 -->
+      <section id="security">
+        <h2>10. Security Measures</h2>
+        <p>
+          We employ strict security practices to safeguard data:
+        </p>
+        <ul>
+          <li><strong>Transport Layer Security (TLS):</strong> Any network communication with third-party services (AdMob, Firebase, Shorebird) is enforced over encrypted HTTPS / TLS 1.3 channels.</li>
+          <li><strong>Local Isolation:</strong> Game data is sandboxed within Android OS application security boundaries.</li>
+          <li><strong>Code Optimization & Obfuscation:</strong> Release binaries are compiled with ProGuard and R8 minification to prevent reverse engineering and ensure software integrity.</li>
+        </ul>
+      </section>
+
+      <!-- Section 11 -->
+      <section id="contact">
+        <h2>11. Contact Information & Policy Updates</h2>
+        <p>
+          We may update this Privacy Policy from time to time to reflect changes in our practices or applicable legal obligations. Any updates will be published to this page with an updated &ldquo;Last Updated&rdquo; revision date.
+        </p>
+        <p>
+          If you have questions, feedback, or requests regarding this Privacy Policy or your data, please contact our support team:
+        </p>
+        <div class="card-callout">
+          <p><strong>Tribus Interactive / BrainRush Team</strong></p>
+          <p>Email: <a href="mailto:support@brainrush.app">support@brainrush.app</a></p>
+          <p>Application: <strong>BrainRush</strong> (Android)</p>
+          <p>Official Policy URL: <a href="https://tribus-brainrush.web.app/privacy-policy.html">https://tribus-brainrush.web.app/privacy-policy.html</a></p>
+        </div>
+      </section>
+
+    </main>
+
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Tribus Interactive &bull; BrainRush. All rights reserved.</p>
+    <p style="margin-top: 0.5rem; font-size: 0.8rem;">
+      <a href="#overview">Back to Top</a> &bull; 
+      <a href="https://tribus-brainrush.web.app/privacy-policy.html">Hosted Policy</a> &bull; 
+      <a href="mailto:support@brainrush.app">Contact Support</a>
+    </p>
+  </footer>
+
+</body>
+</html>
